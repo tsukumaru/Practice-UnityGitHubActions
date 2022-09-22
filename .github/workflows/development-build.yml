@@ -34,9 +34,9 @@ jobs:
         with:
           projectPath: Unity
           targetPlatform: ${{ matrix.targetPlatform }}
-      
+    
       - uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}
-          path: build/${{ matirx.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}
       
