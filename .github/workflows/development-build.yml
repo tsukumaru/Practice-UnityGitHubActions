@@ -32,7 +32,6 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-          projectPath: Unity
           targetPlatform: ${{ matrix.targetPlatform }}
     
       - uses: actions/upload-artifact@v2
